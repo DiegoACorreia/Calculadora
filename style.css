@@ -1,0 +1,35 @@
+div.calculadora{
+   background-color: black; 
+}
+
+#tela{
+    display: grid;
+    grid-template-columns: 550px;
+    grid-template-rows: 100px;
+}
+#botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 550px;
+    grid-gap: 2px;
+}
+#botoes_numericos{
+    display: grid;
+    grid-template-columns: 110px 110px 110px;
+    grid-template-rows: 80px 80px 80px 80px;
+    grid-gap: 2px;
+}
+#botoes_especiais{
+    display: grid;
+    grid-template-columns: 110px 110px;
+    grid-template-rows: 80px 80px 80px 80px;
+    grid-gap: 2px;
+}
+button{
+    background-color: skyblue;
+    color: ivory;
+    border-color: transparent;
+    border-width: 3px;
+    border-radius: 16px;
+    border-style:solid;
+}
