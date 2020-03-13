@@ -1,35 +1,63 @@
 div.calculadora{
-   background-color: black; 
+    border-color: #696969;
+    border-style: solid;
+    border-radius: 8px;
+    width: 600px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto auto;
+    background-color: white;
 }
 
 #tela{
-    display: grid;
-    grid-template-columns: 550px;
-    grid-template-rows: 100px;
+    width: 565px;
+    margin-bottom: 6px;
+    border-color: #696969;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 4px;
+    margin-left: 10px;
+    background-color: white;
 }
 #botoes{
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 550px;
-    grid-gap: 2px;
+    grid-gap: 6px;
 }
 #botoes_numericos{
     display: grid;
     grid-template-columns: 110px 110px 110px;
     grid-template-rows: 80px 80px 80px 80px;
-    grid-gap: 2px;
+    grid-gap: 6px;
+    margin-left: 12px;
 }
 #botoes_especiais{
     display: grid;
     grid-template-columns: 110px 110px;
     grid-template-rows: 80px 80px 80px 80px;
-    grid-gap: 2px;
+    grid-gap: 6px;
 }
 button{
-    background-color: skyblue;
-    color: ivory;
+    background-color: rgb(235, 233, 233);
+    color: #5a5959;
     border-color: transparent;
     border-width: 3px;
     border-radius: 16px;
     border-style:solid;
+    font-size: 20px;
+    cursor: pointer;
+}
+#Del{
+    background-color: rgb(255, 89, 89);
+    color: seashell;
+    font-size: 30px;
+}
+#igual{
+    background-color: greenyellow;
+    color: seashell;
+    font-size: 50px;
+    border-style: solid;
+    
+
 }

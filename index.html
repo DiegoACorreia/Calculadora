@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="calculadora">
-        <div id="tela">
-            <input type="text">
+        <div id="teladiv">
+            <textarea name="tela" id="tela" cols="30" rows="10"></textarea>
         </div>
         <div id="botoes">    
             <div id='botoes_numericos'>
@@ -28,11 +29,11 @@
             </div>
             <div id="botoes_especiais">
                 <button>x</button>
-                <button>Del</button>
+                <button id="Del">C</button>
                 <button>÷</button>
-                <div id="espaco"></div>
+                <button id="rad">√</button>
                 <button>+</button>
-                <div id="espaco"></div>
+                <button id="pot">^</button>
                 <button>-</button>
                 <button id ="igual">=</button>
             </div>
