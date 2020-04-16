@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./script/index.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="calculadora">
-        <div id="teladiv">
-            <textarea name="tela" id="tela" cols="30" rows="10"></textarea>
+        <div id="telaContainer">
+            <input type="text" id='tela' disabled= 'true'>
         </div>
-        <div id="button_conteiner">    
-            <div id='botoes_numericos'>
+        <div id="buttonContainer">    
+            <div id='numericButtonsContainer'>
                 <button>1</button>
                 <button>2</button>
                 <button>3</button>
@@ -27,10 +28,10 @@
                 <button>,</button>
                 <button>00</button>
             </div>
-            <div id="botoes_especiais">
+            <div id="operationButtonsContainer">
                 <button>x</button>
-                <button id="Del">C</button>
-                <button>÷</button>
+                <button id="cleaner">C</button>
+                <button>/</button>
                 <button id="rad">√</button>
                 <button>+</button>
                 <button id="pot">^</button>
@@ -39,7 +40,5 @@
             </div>
         </div>
     </div>
-    <footer>&copy;Empresas Diego Inc. </footer>
 </body>
-
 </html>

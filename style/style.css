@@ -1,0 +1,61 @@
+body, html{
+    background-color: #DCDCDC;
+}
+div.calculadora{
+    margin:auto;
+    width: 550px;
+    height: 700px;
+    border: none;
+    background-color:#363636;
+    border-radius: 32px;
+    font-family:'Comic Neue', cursive;
+    box-shadow: 10px 10px 15px 3px;
+}
+#tela{
+    width: 510px;
+    height: 130px;
+    margin: 40px 20px;
+    border:none;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 20px black;
+}
+#buttonContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 550px;
+    grid-gap: 20px;
+    margin: 0 20px;
+}
+#numericButtonsContainer{
+    display: grid;
+    grid-template-columns: 95px 95px 95px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-gap: 6px;
+}
+#operationButtonsContainer{
+    display: grid;
+    grid-template-columns: 95px 95px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-gap: 6px;
+}
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    background-color: dimgray ;
+    color: whitesmoke;
+    font: inherit;
+    font-size: 25px;
+    box-shadow: 5px 3px 5px black;
+}
+button:hover{
+    box-shadow: inset 3px 5px 10px black,4px 3px 5px black;
+    background-color: rgb(94, 94, 94);
+}
+#cleaner{
+    font-size: 30px;
+}
+#igual{
+    font-size: 60px;
+    background-color: rgb(48, 250, 48);
+}
