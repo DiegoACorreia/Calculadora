@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <script src="./script/index.js"></script>
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="calculadora">
@@ -15,30 +14,31 @@
         </div>
         <div id="buttonContainer">    
             <div id='numericButtonsContainer'>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>0</button>
-                <button>,</button>
-                <button>00</button>
+                <button id='one' onclick='add("1")'>1</button>
+                <button id='two' onclick='add("2")'>2</button>
+                <button id='three' onclick='add("3")'>3</button>
+                <button id='four' onclick='add("4")'>4</button>
+                <button id='five' onclick='add("5")'>5</button>
+                <button id='six' onclick='add("6")'>6</button>
+                <button id='seven' onclick='add("7")'>7</button>
+                <button id='eight' onclick='add("8")'>8</button>
+                <button id='nine' onclick='add("9")'>9</button>
+                <button id='oh' onclick='add("0")'>0</button>
+                <button id='point' onclick='add(".")'>.</button>
+                <button id='ohoh' onclick='add("00")'>00</button>
             </div>
             <div id="operationButtonsContainer">
-                <button>x</button>
-                <button id="cleaner">C</button>
-                <button>/</button>
-                <button id="rad">√</button>
-                <button>+</button>
-                <button id="pot">^</button>
-                <button>-</button>
-                <button id ="igual">=</button>
+                <button id='mult' onclick='add("*")'>*</button>
+                <button id="cleaner" onclick="clear()">C</button>
+                <button id='div' onclick='add("/")'>/</button>
+                <button id="delete">&larr; </button>
+                <button id='sum' onclick='add("+")'>+</button>
+                <button id="pot" onclick='add("**")'>^</button>
+                <button id='subt' onclick='add("-")'>-</button>
+                <button id ="igual" onclick='result()'>=</button>
             </div>
         </div>
     </div>
 </body>
+<script src="./script/index.js"></script>
 </html>
