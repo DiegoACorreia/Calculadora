@@ -11,7 +11,7 @@ div.calculadora{
     font-family: 'Orbitron', sans-serif;
     box-shadow: 10px 10px 15px 3px;
 }
-#tela{
+#screen{
     font-family: inherit;
     font-size: 60px;
     width: 510px;
@@ -19,26 +19,15 @@ div.calculadora{
     margin: 40px 20px;
     border:none;
     border-radius: 24px;
-    box-shadow:10px 10px 20px black;
+    box-shadow: inset 5px 5px 30px gray;
 }
 #buttonContainer{
+    margin-left: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 550px;
-    grid-gap: 20px;
-    margin: 0 20px;
-}
-#numericButtonsContainer{
-    display: grid;
-    grid-template-columns: 95px 95px 95px;
+    grid-template-columns: 95px 95px 95px 95px 95px;
+    grid-gap: 8px;
     grid-template-rows: 100px 100px 100px 100px;
-    grid-gap: 6px;
-}
-#operationButtonsContainer{
-    display: grid;
-    grid-template-columns: 95px 95px;
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-gap: 6px;
+
 }
 button{
     outline: none;
@@ -52,13 +41,14 @@ button{
     box-shadow: 5px 3px 5px black;
 }
 button:hover{
-    box-shadow: inset 3px 5px 10px black,4px 3px 5px black;
+    box-shadow: inset 5px 3px 15px black;
     background-color: rgb(94, 94, 94);
 }
 #cleaner{
     font-size: 30px;
 }
-#igual{
+#equal{
+    height: 206px;
     font-size: 60px;
     background-color: rgb(48, 250, 48);
 }

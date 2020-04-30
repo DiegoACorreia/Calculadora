@@ -10,32 +10,28 @@
 <body>
     <div class="calculadora">
         <div id="telaContainer">
-            <input type="text" id='tela' disabled= 'true'>
+            <input type="text" id='screen' disabled= 'true'>
         </div>
         <div id="buttonContainer">    
-            <div id='numericButtonsContainer'>
-                <button id='one' onclick='add("1")'>1</button>
-                <button id='two' onclick='add("2")'>2</button>
-                <button id='three' onclick='add("3")'>3</button>
-                <button id='four' onclick='add("4")'>4</button>
-                <button id='five' onclick='add("5")'>5</button>
-                <button id='six' onclick='add("6")'>6</button>
-                <button id='seven' onclick='add("7")'>7</button>
-                <button id='eight' onclick='add("8")'>8</button>
-                <button id='nine' onclick='add("9")'>9</button>
-                <button id='oh' onclick='add("0")'>0</button>
-                <button id='point' onclick='add(".")'>.</button>
-                <button id='ohoh' onclick='add("00")'>00</button>
-            </div>
-            <div id="operationButtonsContainer">
-                <button id='mult' onclick='add("*")'>*</button>
-                <button id="cleaner" onclick="clear()">C</button>
-                <button id='div' onclick='add("/")'>/</button>
-                <button id="delete">&larr; </button>
-                <button id='sum' onclick='add("+")'>+</button>
-                <button id="pot" onclick='add("**")'>^</button>
-                <button id='subt' onclick='add("-")'>-</button>
-                <button id ="igual" onclick='result()'>=</button>
+                <button id='one' onclick='addToScreen("1")'>1</button>
+                <button id='two' onclick='addToScreen("2")'>2</button>
+                <button id='three' onclick='addToScreen("3")'>3</button>
+                <button id='multiplier' onclick='addToScreen("*")'>*</button>
+                <button id="cleaner">C</button>
+                <button id='four' onclick='addToScreen("4")'>4</button>
+                <button id='five' onclick='addToScreen("5")'>5</button>
+                <button id='six' onclick='addToScreen("6")'>6</button>
+                <button id='divider' onclick='addToScreen("/")'>/</button>
+                <button id='delete'>&larr; </button>
+                <button id='seven' onclick='addToScreen("7")'>7</button>
+                <button id='eight' onclick='addToScreen("8")'>8</button>
+                <button id='nine' onclick='addToScreen("9")'>9</button>
+                <button id='plus' onclick='addToScreen("+")'>+</button>
+                <button id='equal' onclick='result()'>=</button>
+                <button id='zero' onclick='addToScreen("0")'>0</button>
+                <button id='dot' onclick='addToScreen(".")'>.</button>
+                <button id='dbzero' onclick='addToScreen("00")'>00</button>
+                <button id='minus' onclick='addToScreen("-")'>-</button>
             </div>
         </div>
     </div>

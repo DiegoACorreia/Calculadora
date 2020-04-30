@@ -1,33 +1,36 @@
-var tela = document.querySelector('#tela');
-var clearButton = document.querySelector('#cleaner');
-var deleteButton = document.querySelector('#delete')
-function add(value){
-    tela.value += value;
-    switch (tela.value[0]){
+var screen = document.querySelector('#screen');
+var cleanerButton = document.querySelector('#cleaner');
+var deleteButton = document.querySelector('#delete');
+function addToScreen(value){
+    screen.value += value;
+    function verifyAtualValor(value){
+        if (value === '+' || value === '-' || value === '*' || value === '/' || value === '.'){ return true}
+        else { return false }
+    }
+    if (verifyAtualValor(value)){
+        var valorAnterior = screen.value.length - 2;
+        if (screen.value[valorAnterior] === '+' || screen.value[valorAnterior] === '-' || screen.value[valorAnterior] === '*' || screen.value[valorAnterior] === '/' || screen.value[valorAnterior] === '.'){
+            screen.value = screen.value.substring(0, (screen.value.length - 2));
+            screen.value = screen.value + value;
+        }
+    }
+    switch (screen.value[0]){
         case '*':
-            tela.value = '';
+            screen.value = '';
         case '/':
-            tela.value = '';
+            screen.value = '';
         case '.':
-            tela.value = '';
+            screen.value = '';
         case '**':
-            tela.value = '';
-        case '-':
-            if(tela.value[1] === '+' || tela.value[1] === '.' || tela.value[1] === '/' || tela.value[1] === '*' || tela.value[1] === '-' || tela.value[1] === '**'){
-                tela.value= '-';
-            }
-        case '+':
-            if (tela.value[1] === '+' || tela.value[1] === '.' || tela.value[1] === '/' || tela.value[1] === '*' || tela.value[1] === '-' || tela.value[1] === '**'){
-                tela.value= '+';
-            }
+            screen.value = '';
     }
 }
 function result(){
-    tela.value = eval(tela.value);
+    screen.value = eval(screen.value);
 }
 deleteButton.onclick = function(){
-    tela.value = tela.value.substring(0, (tela.value.length -1))
+    screen.value = screen.value.substring(0, (screen.value.length -1));
 }
-clearButton.onclick = function(){
-    tela.value = '';
+cleanerButton.onclick = function(){
+    screen.value = '';
 }
