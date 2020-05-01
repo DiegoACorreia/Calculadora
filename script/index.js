@@ -21,8 +21,6 @@ function addToScreen(value){
             screen.value = '';
         case '.':
             screen.value = '';
-        case '**':
-            screen.value = '';
     }
 }
 function result(){

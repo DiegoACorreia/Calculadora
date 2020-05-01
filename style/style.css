@@ -1,7 +1,7 @@
 body, html{
     background-color: #DCDCDC;
 }
-div.calculadora{
+div#calculator{
     margin:auto;
     width: 550px;
     height: 700px;
