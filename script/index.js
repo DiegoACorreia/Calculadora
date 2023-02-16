@@ -27,6 +27,7 @@ function addToScreen(value){
     }
 }
 function result(){
+    if(screen.value){
     screen.value = eval(screen.value);
 }
-
+}
